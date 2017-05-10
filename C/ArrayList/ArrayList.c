@@ -13,7 +13,8 @@
 #include <string.h>
 #include "ArrayList.h"
 
-ArrayList *createArrayList( int length ) {
+ArrayList *createArrayList( int length ) 
+{
 
     ArrayList *newList = malloc( sizeof(ArrayList) );
     if( newList == NULL) return NULL;
@@ -37,7 +38,8 @@ ArrayList *createArrayList( int length ) {
 }   // end createArrayList( int )
 
 
-ArrayList *destroyArrayList( ArrayList *list ) {
+ArrayList *destroyArrayList( ArrayList *list ) 
+{
     int i;
 
     if( list == NULL ) return NULL;
@@ -55,7 +57,8 @@ ArrayList *destroyArrayList( ArrayList *list ) {
 }   // end *destroyArrayList( ArrayList )
 
 
-ArrayList *expandArrayList( ArrayList *list, int length ) {
+ArrayList *expandArrayList( ArrayList *list, int length ) 
+{
     int i;
 
     if( list==NULL ) return NULL;
@@ -81,7 +84,8 @@ ArrayList *expandArrayList( ArrayList *list, int length ) {
 }   //end *expandArrayList( ArrayList, int )
 
 
-ArrayList *trimArrayList( ArrayList *list ) {
+ArrayList *trimArrayList( ArrayList *list ) 
+{
     // validate parameters
     if( list==NULL ) return NULL;
 
@@ -104,7 +108,8 @@ ArrayList *trimArrayList( ArrayList *list ) {
 }   // end *trimArrayList( ArrayList )
 
 
-char *put( ArrayList *list, char *str ) {
+char *put( ArrayList *list, char *str ) 
+{
     
     if( list==NULL || str==NULL) return NULL;
 
@@ -124,7 +129,8 @@ char *put( ArrayList *list, char *str ) {
 }   // end *put( ArrayList, char* )
 
 
-char *get( ArrayList *list, int index ) {
+char *get( ArrayList *list, int index ) 
+{
     // validate parameters
     if( list == NULL || index >= list->size || index < 0 ) return NULL;
 
@@ -133,7 +139,8 @@ char *get( ArrayList *list, int index ) {
 }   // end *get( ArrayList, int )
 
 
-char *set( ArrayList *list, int index, char *str ) {
+char *set( ArrayList *list, int index, char *str ) 
+{
     // validate parameters
     if( str == NULL || list == NULL || index >= list->size || index < 0 ) return NULL;
 
@@ -146,7 +153,8 @@ char *set( ArrayList *list, int index, char *str ) {
 }   // end *set( ArrayList, int, char* )
 
 
-char *insertElement( ArrayList *list, int index, char *str ) {
+char *insertElement( ArrayList *list, int index, char *str ) 
+{
     int i;
 
     // validate parameters
@@ -186,7 +194,8 @@ char *insertElement( ArrayList *list, int index, char *str ) {
 }   // end *insertElement( ArrayList, int, char* )
 
 
-int removeElement( ArrayList *list, int index ) {
+int removeElement( ArrayList *list, int index ) 
+{
     int i;
 
     // validate parameters
@@ -211,7 +220,8 @@ int removeElement( ArrayList *list, int index ) {
 }   // end removeElement( ArrayList, int )
 
 
-int getSize( ArrayList *list ) {
+int getSize( ArrayList *list ) 
+{
     // validate parameters
     if( list == NULL ) return -1;
 
@@ -219,7 +229,8 @@ int getSize( ArrayList *list ) {
 }   // end getSize( ArrayList )
 
 
-void printArrayList( ArrayList *list ) {
+void printArrayList( ArrayList *list ) 
+{
     int i;
 
     // validate parameters
