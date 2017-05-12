@@ -61,7 +61,7 @@ implements MouseListener, MouseMotionListener, Runnable, ActionListener
         @Override
         public void init()
         {
-                 // set size
+                // set size
                 setSize(1020, 700);
                 
                 // create off-screen image used for repaint()
