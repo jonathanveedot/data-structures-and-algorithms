@@ -43,10 +43,6 @@ import java.util.Arrays;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-/**
- *
- * @author Jonathan Velez
- */
 public class Huffman
 {
     // the default capacity is the size of extended ASCII, i.e. 256
